@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['queryfirmwareversion_66',['queryFirmwareVersion',['../classfirmata_1_1_firmata_marshaller.html#af954bcf09b77458b3c4f032897d14697',1,'firmata::FirmataMarshaller']]],
-  ['queryversion_67',['queryVersion',['../classfirmata_1_1_firmata_marshaller.html#a488fbbd372c894ec78ebb99e0faf5167',1,'firmata::FirmataMarshaller']]]
+  ['queryfirmwareversion',['queryFirmwareVersion',['../classfirmata_1_1_firmata_marshaller.html#a0969dd053d70710fa9cd42826676bf57',1,'firmata::FirmataMarshaller']]],
+  ['queryversion',['queryVersion',['../classfirmata_1_1_firmata_marshaller.html#a11888d7be3e6dee5bb5680ded7d7efab',1,'firmata::FirmataMarshaller']]]
 ];
