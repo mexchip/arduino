@@ -31,7 +31,7 @@ Most of the time you will be interacting with Arduino with a client library on t
   * [http://funnel.cc](http://funnel.cc)
 * python
   * [https://github.com/MrYsLab/pymata-aio](https://github.com/MrYsLab/pymata-aio)
-  * [https://github.com/MrYsLab/PyMata]([https://github.com/MrYsLab/PyMata)
+  * [https://github.com/MrYsLab/PyMata](https://github.com/MrYsLab/PyMata)
   * [https://github.com/tino/pyFirmata](https://github.com/tino/pyFirmata)
   * [https://github.com/lupeke/python-firmata](https://github.com/lupeke/python-firmata)
   * [https://github.com/firmata/pyduino](https://github.com/firmata/pyduino)
@@ -194,3 +194,9 @@ keep-one-line-statements = true
 ```
 
 If you happen to use Sublime Text, [this astyle plugin](https://github.com/timonwong/SublimeAStyleFormatter) is helpful. Set the above rules in the user settings file.
+
+## Known issues
+### File extension in firmware name
+The [Firmata protocol](https://github.com/firmata/protocol/blob/master/protocol.md#Query-Firmware-Name-and-Version) states that firmware name should be exactly the same as the name of the Firmata client file, minus the file extension. However, in this implementation, .ino (and any extension other than .cpp) is not removed from firmware name. So for StandardFirmata.ino, the firmware name is StandardFirmata.ino.
+
+As .ino extension has always been included, removing it may break existing user applications.
